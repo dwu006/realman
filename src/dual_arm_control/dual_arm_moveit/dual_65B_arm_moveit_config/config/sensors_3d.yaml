@@ -1,0 +1,12 @@
+sensors:
+  - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+    point_cloud_topic: /camera1/depth/points
+    max_range: 1.5
+    point_subsample: 1
+    padding_offset: 0.03
+    padding_scale: 1.0
+    filtered_cloud_topic: filtered_cloud
+    filtered_cloud_enabled: false
+    max_update_rate: 1.0
+    frame_subsample: 1
+    update_occupancy: true
