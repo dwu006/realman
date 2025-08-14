@@ -1,0 +1,13 @@
+<launch>
+    <!-- Realman Arm Driver and RS Camera -->
+    <include file="$(find arm_driver)/launch/dual_arm_65_driver.launch" output="log"/>
+    <include file="$(find d435_demo)/launch/d435_pub.launch" output="log"> 
+            <!-- <arg name="idx" value="0"/> -->
+            <!-- <arg name="width" value="1280"/>
+            <arg name="height" value="720"/> -->
+    </include>
+    <!-- <include file="$(find servo_ros)/launch/servo_start.launch" output="log"/>  -->
+    
+    <!-- Classic Controllers -->
+    <node pkg="pick_cherry" type="rm_controller.py" name="pick_cherry_node" output="screen" />
+</launch>
