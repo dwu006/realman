@@ -1,0 +1,41 @@
+# ROS/catkin
+build/
+devel/
+devel_isolated/
+install/
+install_isolated/
+logs/
+.catkin_tools/
+.ros/
+
+# CMake/CLion
+.cmake/
+CMakeCache.txt
+cmake-build-*/
+CMakeFiles/
+CMakeScripts/
+Testing/
+compile_commands.json
+CMakeLists.txt.user
+
+# Editors/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+.python-version
+
+# Misc
+.DS_Store
+.ipynb_checkpoints/
